@@ -2,6 +2,9 @@ import streamlit as st
 import numpy as np 
 import pytesseract #python wrapper for the ocr software 
 from PIL import Image 
+pytesseract.pytesseract.tesseract_cmd = '/app/.apt/usr/bin/tesseract'
+
+
 st.title('OPTICAL CHARACTER RECOGNITION')
 st.text('Upload the Image')
 
